@@ -1,0 +1,10 @@
+'use strict';
+const s = { firstName: 'Bo', lastName: 'Jones', age: 10 };
+const fullName = s.firstName + ' ' + s.lastName;
+console.log(fullName, typeof fullName);
+const vehicle = { make: 'Infiniti', model: 'G37', year: 2005 };
+vehicle['color'] = 'Serenity Sand';
+vehicle['isConvertible'] = false;
+const joey = { name: 'Joey', kind: 'Cat' };
+delete joey.name;
+console.log(joey);
