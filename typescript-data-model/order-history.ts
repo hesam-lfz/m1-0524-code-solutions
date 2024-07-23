@@ -1,3 +1,9 @@
+interface Book {
+  isbn: string;
+  title: string;
+  author: string;
+}
+
 interface NonBookItem {
   title: string;
   price: number;
