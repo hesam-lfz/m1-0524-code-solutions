@@ -6,7 +6,7 @@ function pick(
   const o: Record<string, any> = {};
   for (let i = 0; i < keys.length; i++) {
     const key: string = keys[i];
-    if (source[key]) {
+    if (source[key] !== undefined) {
       o[key] = source[key];
     }
   }
