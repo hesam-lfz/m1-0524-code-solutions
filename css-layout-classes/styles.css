@@ -1,0 +1,42 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.column-one-third {
+  width: calc(100% / 3);
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.column-one-fourth {
+  width: calc(100% / 4);
+}
+
+.column-one-half {
+  width: calc(100% / 2);
+}
+
+/* is there a way to change this width without these numbers so the width of all the contents match? */
+
+.column-other-half {
+  width: calc(100% / 2.2);
+}
+
+.column-other-half img,
+.column-one-fourth img,
+.column-one-half img,
+.column-one-third img {
+  max-width: 100%;
+  height: auto;
+}
