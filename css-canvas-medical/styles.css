@@ -4,7 +4,7 @@
 
 #blue-header {
   width: 10%;
-  margin: 55px 300px 80px 55px;
+  margin: 55px 700px 80px 55px;
 }
 
 .top-menu {
@@ -13,6 +13,7 @@
   color: gray;
   padding: 15px 25px;
   text-decoration: none;
+  font-family: avenir, sans-serif;
 }
 
 .top-menu:hover {
@@ -62,8 +63,9 @@
 
 #image-paragraph {
   font-family: Avenir, sans-serif;
+  position: absolute;
   width: 42%;
-  top: 125px;
+  top: 140px;
   left: 65px;
   line-height: 1.75;
 }
@@ -193,4 +195,9 @@ h2 {
 #end-link,
 #end-link-2 {
   color: grey;
+}
+
+hr {
+  margin-top: -30px;
+  border-top: 1px solid grey;
 }
