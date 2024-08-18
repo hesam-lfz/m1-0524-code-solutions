@@ -1,5 +1,22 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   margin: 0 auto;
+}
+
+#top-banner {
+  min-width: calc(100% / 5);
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.content-container {
+  color: white;
 }
 
 #blue-header {
@@ -22,7 +39,7 @@
   background-color: #2c4464;
 }
 
-.overlay {
+.overlay > img {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
   position: absolute;
   bottom: 0;
@@ -33,61 +50,53 @@
 
 .image-absolute {
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: 40vh;
-  margin: 0 50px;
   background-image: url('images/hero.jpg');
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-#image-header,
-#image-paragraph,
-#image-link {
-  position: absolute;
-  color: white;
 }
 
 #image-header {
   display: flex;
   font-family: 'Tiempos Headline', sans-serif;
-  top: 60px;
-  left: 65px;
-  width: 50%;
-  margin-bottom: 2vh;
+  margin-left: 65px;
+  width: 30%;
+  margin-top: 50px;
 }
 
 #image-paragraph {
   font-family: Avenir, sans-serif;
-  position: absolute;
   width: 42%;
-  top: 140px;
-  left: 65px;
+  margin-left: 65px;
+  margin-top: 30px;
+  margin-bottom: 70px;
   line-height: 1.75;
+  min-height: 30px;
 }
 
 .row {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 20px 0;
 }
 
 #image-link {
   font-family: avenir, sans-serif;
-  bottom: 80px;
+  color: white;
+  margin-top: 375px;
   text-align: left;
   border-radius: 5%;
   background-color: #2c4464;
-  font-size: 20px;
+  font-size: 1rem;
   padding-left: 55px;
   padding-right: 55px;
   padding-top: 15px;
   padding-bottom: 15px;
-  left: 65px;
+  margin-left: 65px;
   text-decoration: none;
 }
 
@@ -123,11 +132,7 @@
 
 .text-box {
   background-color: rgb(244, 244, 244);
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
   font-family: avenir, sans-serif;
   color: gray;
 }
