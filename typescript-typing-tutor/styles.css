@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: black;
+  margin: 0 5px 5px;
+}
+
+#w,
+#m,
+#t,
+#b {
+  margin-left: 25px;
+}
+
+h1 {
+  font-family: 'courier prime', sans-serif;
+}
+
+.current-letter {
+  text-decoration: overline;
+}
+
+.correct {
+  color: rgb(73, 251, 73);
+}
+
+.wrong {
+  color: red;
+}
