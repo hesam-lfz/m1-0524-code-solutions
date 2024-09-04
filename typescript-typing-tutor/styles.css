@@ -11,19 +11,8 @@ span {
   margin: 0 5px 5px;
 }
 
-#w,
-#m,
-#t,
-#b {
-  margin-left: 25px;
-}
-
 h1 {
   font-family: 'courier prime', sans-serif;
-}
-
-.current-letter {
-  text-decoration: overline;
 }
 
 .correct {
@@ -32,4 +21,11 @@ h1 {
 
 .wrong {
   color: red;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.underlined-letter {
+  text-decoration: underline;
+  text-underline-position: under;
 }

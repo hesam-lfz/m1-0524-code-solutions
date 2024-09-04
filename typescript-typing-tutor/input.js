@@ -1,23 +1,24 @@
 'use strict';
-const sentence = 'grumpy wizards make toxic brew';
-const $spans = document.querySelectorAll('span');
-if (!$spans) throw new Error('$span query failed');
-console.log($spans);
-let currPos = 0;
-$spans[currPos].classList.add('current-letter');
+const $span = document.querySelectorAll('span');
+if (!$span) throw new Error('$span query failed');
+let currentIndex = 0;
+console.log($span);
 function typingTest(event) {
-  const typedChar = event.key;
-  const targetChar = sentence[currPos];
-  console.log('event', event);
-  console.log('typed char', typedChar);
-  console.log('target char', targetChar);
-  if (typedChar === targetChar) {
-    $spans[currPos].className = 'correct';
-    $spans[currPos].classList.remove('current-letter');
-    currPos += 1;
-    $spans[currPos].classList.add('current-letter');
+  let span = $span[currentIndex];
+  console.log(
+    currentIndex,
+    span,
+    event.key,
+    span.textContent,
+    event.key === span.textContent
+  );
+  if (event.key === span.textContent) {
+    span.className = 'correct';
+    currentIndex++;
+  } else if (event.key !== span.textContent) {
+    span.className = 'wrong';
   } else {
-    $spans[currPos].className = 'wrong current-letter';
+    span.className = 'letter';
   }
 }
 document.body.addEventListener('keydown', typingTest);
