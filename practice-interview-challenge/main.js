@@ -6,8 +6,8 @@ const getRangeReport = (start, end) => {
   let total = 0;
   for (let i = start; i <= end; i++) {
     total += i;
-    let l = odds;
-    if (i % 2 === 0) l = evens;
+    let l = evens;
+    if (i % 2 === 1) l = odds;
     l.push(i);
     range.push(i);
   }
