@@ -1,2 +1,3 @@
-if (false) throw new Error('$doubleClick does not exist');
-console.log('hi');
+'use strict';
+const x = 12;
+console.log('hi' + x);
